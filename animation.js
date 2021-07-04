@@ -155,56 +155,6 @@ function hamburgerAnimation() {
     });
 }
 
-function headingAnimation() {
-    var window_height = $window.height();
-    var window_top_position = $window.scrollTop();
-    var window_bottom_position = (window_top_position + window_height);
-
-    $.each($('h2'), function () {
-        var $element = $(this);
-        var element_height = $element.outerHeight();
-        var element_top_position = $element.offset().top;
-        var element_bottom_position = (element_top_position + element_height);
-
-
-
-
-        if ((element_bottom_position >= window_top_position) &&
-            (element_top_position <= window_bottom_position)) {
-            $element.addClass('animate__animated animate__zoomIn');
-        } else {
-            $element.removeClass('animate__animated animate__zoomIn');
-        }
-
-
-    });
-}
-
-function paragraphAnimation() {
-    var window_height = $window.height();
-    var window_top_position = $window.scrollTop();
-    var window_bottom_position = (window_top_position + window_height);
-
-    $.each($('p'), function () {
-        var $element = $(this);
-        var element_height = $element.outerHeight();
-        var element_top_position = $element.offset().top;
-        var element_bottom_position = (element_top_position + element_height);
-
-
-
-
-        if ((element_bottom_position >= window_top_position) &&
-            (element_top_position <= window_bottom_position)) {
-            $element.addClass('animate__animated animate__fadeIn');
-        } else {
-            $element.removeClass('animate__animated animate__fadeIn');
-        }
-
-
-    });
-}
-
 function mobileMenuAnimation() {
     var window_height = $window.height();
     var window_top_position = $window.scrollTop();
@@ -237,7 +187,5 @@ $window.on('scroll resize', headerContactAnimation);
 $window.on('scroll resize', headerSocialAnimation);
 $window.on('scroll resize', headerNavAnimation);
 $window.on('scroll resize', hamburgerAnimation);
-//$window.on('scroll resize', headingAnimation);
-//$window.on('scroll resize', paragraphAnimation);
 $window.on('scroll resize', mobileMenuAnimation);
 $window.trigger('scroll');

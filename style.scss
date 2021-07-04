@@ -22,7 +22,7 @@ html {
     background: #d3750b;
     display: flex;
     justify-content: space-between;
-    justify-items: center;
+    justify-items: baseline;
     padding: 0.7em;
 
     .hamburger {
@@ -41,7 +41,7 @@ html {
             background: #d3760b;
             position: absolute;
             width: 70vw;
-            height: 22vh;
+            height: 7.5em;
             right: -18px;
             z-index: 5;
             text-align: center;
@@ -72,11 +72,13 @@ html {
 
     &_contact {
         margin-left: 0.3em;
+        margin-top: 0.4em;
         display: flex;
         flex-direction: column;
         span {
             color: #ffffff;
             padding-top: 0.3em;
+            font-size: 0.7em;
             &:hover {
                 text-decoration: underline;
                 cursor: pointer;
@@ -86,7 +88,7 @@ html {
 
     &_social {
         padding: 0.3em;
-        font-size: 2em;
+        font-size: 1.7em;
         a {
             margin-left: 0.2em;
         }
@@ -112,6 +114,17 @@ html {
     .header {
         .hamburger {
             display: none;
+        }
+
+        &_contact {
+            span {
+                font-size: 1em;
+                padding: 0;
+            }
+        }
+
+        &_social {
+            font-size: 2em;
         }
 
         &_nav {
