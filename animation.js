@@ -46,9 +46,9 @@ function workAnimation() {
 
         if ((element_bottom_position >= window_top_position) &&
             (element_top_position <= window_bottom_position)) {
-            $element.addClass('animate__animated animate__heartBeat');
+            $element.addClass('animate__animated animate__backInRight');
         } else {
-            $element.removeClass('animate__animated animate__heartBeat');
+            $element.removeClass('animate__animated animate__backInRight');
         }
 
 

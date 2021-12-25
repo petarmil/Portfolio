@@ -211,6 +211,11 @@ html {
   transition: all ease 1s;
 }
 
+@media screen and (max-width: 425px) {
+  .skills .skill-wrap .skill {
+    max-width: 5em;
+  }
+}
 /*************************************  PORTFOLIO   *****************************/
 .portfolio {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.103), rgba(0, 0, 0, 0.726)),
@@ -260,6 +265,14 @@ html {
   max-width: 250px;
 }
 
+@media screen and (max-width: 425px) {
+  .portfolio .work {
+    max-width: 75%;
+  }
+  .portfolio .work img {
+    max-width: 75%;
+  }
+}
 /************     FOOTER      *******************/
 .footer {
   text-align: center;

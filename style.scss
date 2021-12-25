@@ -240,6 +240,16 @@ html {
     }
 }
 
+@media screen and (max-width: 425px) {
+    .skills {
+        .skill-wrap {
+            .skill {
+                max-width: 5em;
+            }
+        }
+    }
+}
+
 /*************************************  PORTFOLIO   *****************************/
 
 .portfolio {
@@ -293,6 +303,17 @@ html {
 
     img {
         max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .portfolio {
+        .work {
+            max-width: 75%;
+            img {
+                max-width: 75%;
+            }
+        }
     }
 }
 
