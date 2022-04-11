@@ -46,9 +46,9 @@ function workAnimation() {
 
         if ((element_bottom_position >= window_top_position) &&
             (element_top_position <= window_bottom_position)) {
-            $element.addClass('animate__animated animate__backInRight');
+            $element.addClass('animate__animated animate__zoomIn');
         } else {
-            $element.removeClass('animate__animated animate__backInRight');
+            $element.removeClass('animate__animated animate__zoomIn');
         }
 
 
